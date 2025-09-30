@@ -27,7 +27,7 @@ _data = {
 }
 point_count = 7
 
-[node name="Node3D" type="Node3D"]
+[node name="BaseLevel" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_5x8ra")
@@ -107,11 +107,11 @@ transform = Transform3D(0.999593, 0, -0.027987, 0, 0.99999, 0, 0.0279869, 0, 0.9
 progress = 5.0
 
 [node name="Enemy3" parent="Path3D" instance=ExtResource("2_5x8ra")]
-transform = Transform3D(0.999827, 0, -0.0177491, 0, 0.99999, 0, 0.017749, 0, 0.999829, -13.7251, 0, 9.0038)
+transform = Transform3D(0.999827, 0, -0.0177491, 0, 0.99999, 0, 0.017749, 0, 0.999828, -13.7251, 0, 9.0038)
 progress = 10.0
 
 [node name="Enemy4" parent="Path3D" instance=ExtResource("2_5x8ra")]
-transform = Transform3D(0.999836, 0, 0.0170706, 0, 0.99999, 0, -0.0170705, 0, 0.999841, -13.6976, 0, 4.00374)
+transform = Transform3D(0.999835, 0, 0.0170706, 0, 0.99999, 0, -0.0170705, 0, 0.99984, -13.6976, 0, 4.00374)
 progress = 15.0
 
 [node name="Enemy5" parent="Path3D" instance=ExtResource("2_5x8ra")]
@@ -120,7 +120,9 @@ progress = 20.0
 
 [node name="Base" parent="." instance=ExtResource("3_knq2t")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 18, 0, 2)
+max_health = 6
 
-[node name="TurretManager" type="Node3D" parent="."]
+[node name="TurretManager" type="Node3D" parent="." node_paths=PackedStringArray("enemy_path")]
 script = ExtResource("5_cwwxe")
 turret = ExtResource("6_ufkdr")
+enemy_path = NodePath("../Path3D")
