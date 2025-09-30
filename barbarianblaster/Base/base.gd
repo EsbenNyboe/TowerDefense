@@ -6,11 +6,9 @@ extends Node3D
 var health: int:
 	set(value):
 		health = value
-		label_3d.text = str(health)
+		label_3d.text = str(health) + "/" + str(max_health)
 		if health < 1:
 			get_tree().reload_current_scene()
-	get():
-		return health
 
 func take_damage() -> void:
 	health -= 1
