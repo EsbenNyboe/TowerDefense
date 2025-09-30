@@ -39,8 +39,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -1, 0)
 visible = false
 size = Vector3(100, 2, 100)
 
-[node name="RayPickerCamera" parent="." instance=ExtResource("1_knq2t")]
+[node name="RayPickerCamera" parent="." node_paths=PackedStringArray("gridmap") instance=ExtResource("1_knq2t")]
 transform = Transform3D(1, 0, 0, 0, 0.422618, 0.906308, 0, -0.906308, 0.422618, 0, 23.347, 19.452)
+gridmap = NodePath("../GridMap")
 
 [node name="GridMap" type="GridMap" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
@@ -103,11 +104,11 @@ transform = Transform3D(0.999593, 0, -0.027987, 0, 0.99999, 0, 0.0279869, 0, 0.9
 progress = 5.0
 
 [node name="Enemy3" parent="Path3D" instance=ExtResource("2_5x8ra")]
-transform = Transform3D(0.999827, 0, -0.0177491, 0, 0.99999, 0, 0.017749, 0, 0.999832, -13.7251, 0, 9.0038)
+transform = Transform3D(0.999827, 0, -0.0177491, 0, 0.99999, 0, 0.017749, 0, 0.999831, -13.7251, 0, 9.0038)
 progress = 10.0
 
 [node name="Enemy4" parent="Path3D" instance=ExtResource("2_5x8ra")]
-transform = Transform3D(0.999839, 0, 0.0170707, 0, 0.99999, 0, -0.0170706, 0, 0.999844, -13.6976, 0, 4.00374)
+transform = Transform3D(0.999838, 0, 0.0170707, 0, 0.99999, 0, -0.0170706, 0, 0.999843, -13.6976, 0, 4.00374)
 progress = 15.0
 
 [node name="Enemy5" parent="Path3D" instance=ExtResource("2_5x8ra")]
