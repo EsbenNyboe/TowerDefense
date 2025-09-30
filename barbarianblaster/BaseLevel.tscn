@@ -102,7 +102,7 @@ transform = Transform3D(0.999593, 0, -0.027987, 0, 0.99999, 0, 0.0279869, 0, 0.9
 progress = 5.0
 
 [node name="Enemy3" parent="Path3D" instance=ExtResource("2_5x8ra")]
-transform = Transform3D(0.999827, 0, -0.0177491, 0, 0.99999, 0, 0.0177491, 0, 0.999832, -13.7251, 0, 9.0038)
+transform = Transform3D(0.999827, 0, -0.0177491, 0, 0.99999, 0, 0.017749, 0, 0.999832, -13.7251, 0, 9.0038)
 progress = 10.0
 
 [node name="Enemy4" parent="Path3D" instance=ExtResource("2_5x8ra")]
