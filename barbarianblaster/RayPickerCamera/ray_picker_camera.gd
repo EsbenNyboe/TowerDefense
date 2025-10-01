@@ -24,5 +24,7 @@ func _process(delta: float) -> void:
 						gridmap.set_cell_item(cell, 1)
 						turret_manager.build_turret(gridmap.map_to_local(cell))
 						bank.gold -= turret_cost
+		else:
+			Input.set_default_cursor_shape(Input.CURSOR_ARROW)
 	else:
 		Input.set_default_cursor_shape(Input.CURSOR_ARROW)
