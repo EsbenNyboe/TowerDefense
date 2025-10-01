@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://3hglmvlcgt28"]
+[gd_scene load_steps=14 format=3 uid="uid://3hglmvlcgt28"]
 
 [ext_resource type="PackedScene" uid="uid://dksetbacqnnv5" path="res://RayPickerCamera/ray_picker_camera.tscn" id="1_knq2t"]
 [ext_resource type="MeshLibrary" uid="uid://fc40di53ut7g" path="res://MeshLibraries/SpaceLibrary.tres" id="1_lvb7b"]
@@ -7,6 +7,7 @@
 [ext_resource type="Script" uid="uid://5qr085gv1j7m" path="res://Enemy/enemy_path.gd" id="3_ufkdr"]
 [ext_resource type="Script" uid="uid://dd2wlr87eva24" path="res://Turret/turret_manager.gd" id="5_cwwxe"]
 [ext_resource type="PackedScene" uid="uid://qkeiacwrvcpk" path="res://Turret/turret.tscn" id="6_ufkdr"]
+[ext_resource type="Script" uid="uid://de3nu1qrqfi72" path="res://bank.gd" id="8_tv3th"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_dq0bh"]
 sky_horizon_color = Color(0.662243, 0.671743, 0.686743, 1)
@@ -120,7 +121,7 @@ script = ExtResource("5_cwwxe")
 turret = ExtResource("6_ufkdr")
 enemy_path = NodePath("../EnemyPath")
 
-[node name="Bank" type="MarginContainer" parent="."]
+[node name="Bank" type="MarginContainer" parent="." groups=["bank"]]
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
@@ -132,6 +133,7 @@ theme_override_constants/margin_left = 16
 theme_override_constants/margin_top = 16
 theme_override_constants/margin_right = 16
 theme_override_constants/margin_bottom = 16
+script = ExtResource("8_tv3th")
 
 [node name="Label" type="Label" parent="Bank"]
 layout_mode = 2
