@@ -1,9 +1,12 @@
 extends Node
 
+signal stop_spawning_enemies
+
 @export var game_length := 30.0
 @export var spawn_time_curve: Curve
 @export var enemy_health_curve: Curve
 @export var kill_reward_curve: Curve
+
 @onready var timer: Timer = $Timer
 
 func _ready() -> void:
@@ -20,3 +23,7 @@ func get_enemy_health() -> float:
 
 func get_kill_reward() -> float:
 	return kill_reward_curve.sample(game_progress_ratio())
+
+
+func _on_timer_timeout() -> void:
+	stop_spawning_enemies.emit()

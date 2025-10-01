@@ -19,13 +19,13 @@ var health: int:
 
 func _ready() -> void:
 	health = max_health
-	Engine.time_scale = 3
 
 func _process(delta: float) -> void:
 	progress += delta * speed
 	if progress_ratio >= 1:
 		base.take_damage()
 		set_process(false)
+		queue_free()
 
 func take_damage(damage: int) -> void:
 	health -= damage
