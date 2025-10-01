@@ -6,5 +6,7 @@ extends Path3D
 
 func spawn_enemy() -> void:
 	var spawned_enemy = enemy_scene.instantiate()
+	spawned_enemy.max_health = difficulty_manager.get_enemy_health()
+	spawned_enemy.kill_reward = difficulty_manager.get_kill_reward()
 	add_child(spawned_enemy)
 	timer.wait_time = difficulty_manager.get_spawn_time()
