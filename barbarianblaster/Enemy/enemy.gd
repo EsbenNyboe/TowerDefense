@@ -19,6 +19,7 @@ var health: int:
 
 func _ready() -> void:
 	health = max_health
+	Engine.time_scale = 10
 
 func _process(delta: float) -> void:
 	progress += delta * speed
