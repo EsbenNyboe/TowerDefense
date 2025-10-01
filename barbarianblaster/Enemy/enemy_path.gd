@@ -10,6 +10,14 @@ func spawn_enemy() -> void:
 	spawned_enemy.kill_reward = difficulty_manager.get_kill_reward()
 	add_child(spawned_enemy)
 	timer.wait_time = difficulty_manager.get_spawn_time()
+	spawned_enemy.tree_exited.connect(enemy_defeated)
 
 func _on_difficulty_manager_stop_spawning_enemies() -> void:
 	timer.stop()
+
+func enemy_defeated() -> void:
+	if timer.is_stopped():
+		for child in get_children():
+			if child is PathFollow3D:
+				return
+		print("you won")
