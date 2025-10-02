@@ -152,6 +152,7 @@ size_flags_horizontal = 0
 size_flags_vertical = 8
 text = "Placeholder"
 label_settings = SubResource("LabelSettings_epnn3")
+uppercase = true
 
 [node name="DifficultyManager" parent="." instance=ExtResource("9_xkmwr")]
 
