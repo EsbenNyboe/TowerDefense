@@ -1,4 +1,4 @@
-[gd_scene load_steps=5 format=3 uid="uid://dsywfg7fxyc65"]
+[gd_scene load_steps=7 format=3 uid="uid://dsywfg7fxyc65"]
 
 [ext_resource type="PackedScene" uid="uid://chl7l5d4wda2e" path="res://Player/player.tscn" id="1_gilti"]
 
@@ -15,6 +15,12 @@ sky = SubResource("Sky_gilti")
 tonemap_mode = 2
 glow_enabled = true
 
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_yc8as"]
+albedo_color = Color(0.27387273, 0.27387273, 0.27387273, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_gilti"]
+albedo_color = Color(0.9000981, 0.44369268, 0.2710151, 1)
+
 [node name="SandBox" type="Node3D"]
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -28,6 +34,31 @@ shadow_enabled = true
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.5, 0)
 use_collision = true
 size = Vector3(64, 1, 64)
+material = SubResource("StandardMaterial3D_yc8as")
 
 [node name="Player" parent="." instance=ExtResource("1_gilti")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+
+[node name="Platform" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -5)
+use_collision = true
+size = Vector3(3, 1, 3)
+material = SubResource("StandardMaterial3D_gilti")
+
+[node name="Platform2" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, -8)
+use_collision = true
+size = Vector3(3, 2, 3)
+material = SubResource("StandardMaterial3D_gilti")
+
+[node name="Platform3" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 1.5, -8)
+use_collision = true
+size = Vector3(3, 3, 3)
+material = SubResource("StandardMaterial3D_gilti")
+
+[node name="Platform4" type="CSGBox3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3, 2, -5)
+use_collision = true
+size = Vector3(3, 4, 3)
+material = SubResource("StandardMaterial3D_gilti")
