@@ -1,6 +1,7 @@
-[gd_scene load_steps=4 format=3 uid="uid://chl7l5d4wda2e"]
+[gd_scene load_steps=5 format=3 uid="uid://chl7l5d4wda2e"]
 
 [ext_resource type="Script" uid="uid://dfovmxd54sl6j" path="res://Player/player.gd" id="1_l8h54"]
+[ext_resource type="Script" uid="uid://b7tm8cd4o5pfk" path="res://Player/smooth_camera.gd" id="2_4ntmi"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_hvfyp"]
 
@@ -18,4 +19,7 @@ shape = SubResource("CapsuleShape3D_l8h54")
 [node name="CameraPivot" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 
-[node name="Camera3D" type="Camera3D" parent="CameraPivot"]
+[node name="SmoothCamera" type="Camera3D" parent="CameraPivot"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+top_level = true
+script = ExtResource("2_4ntmi")
