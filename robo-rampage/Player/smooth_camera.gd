@@ -8,3 +8,4 @@ func _physics_process(delta: float) -> void:
 		get_parent().global_transform, weight
 	)
 	global_position = get_parent().global_position
+	
