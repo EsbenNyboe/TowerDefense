@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c45uanjeodblj"
-path.s3tc="res://.godot/imported/makarov_material_baseColor.png-efb4086feb2804005f4c67b84060bfd5.s3tc.ctex"
+uid="uid://hxkb1yjbkj28"
+path.s3tc="res://.godot/imported/Floor_baseColor.png-8321c66b302b7ae8857c70d4e6e9bb8c.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Player/makarov_pm/textures/makarov_material_baseColor.png"
-dest_files=["res://.godot/imported/makarov_material_baseColor.png-efb4086feb2804005f4c67b84060bfd5.s3tc.ctex"]
+source_file="res://Weapons/makarov_pm/textures/Floor_baseColor.png"
+dest_files=["res://.godot/imported/Floor_baseColor.png-8321c66b302b7ae8857c70d4e6e9bb8c.s3tc.ctex"]
 
 [params]
 

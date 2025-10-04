@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hdeuffsbhnna"
-path.s3tc="res://.godot/imported/makarov_attachments_material_baseColor.png-8afc80a01377720756d402e09e010598.s3tc.ctex"
+uid="uid://clngjosbur8r3"
+path.s3tc="res://.godot/imported/Floor_metallicRoughness.png-5a7566f1e8e654d5f232a32cd1cb8f71.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Player/makarov_pm/textures/makarov_attachments_material_baseColor.png"
-dest_files=["res://.godot/imported/makarov_attachments_material_baseColor.png-8afc80a01377720756d402e09e010598.s3tc.ctex"]
+source_file="res://Weapons/makarov_pm/textures/Floor_metallicRoughness.png"
+dest_files=["res://.godot/imported/Floor_metallicRoughness.png-5a7566f1e8e654d5f232a32cd1cb8f71.s3tc.ctex"]
 
 [params]
 

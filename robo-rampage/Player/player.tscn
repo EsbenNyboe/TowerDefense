@@ -3,7 +3,7 @@
 [ext_resource type="Script" uid="uid://dfovmxd54sl6j" path="res://Player/player.gd" id="1_l8h54"]
 [ext_resource type="Script" uid="uid://b7tm8cd4o5pfk" path="res://Player/smooth_camera.gd" id="2_4ntmi"]
 [ext_resource type="Script" uid="uid://de0hwn6syogc0" path="res://Player/crosshair.gd" id="3_btcbx"]
-[ext_resource type="PackedScene" uid="uid://c553rv5hvrg6j" path="res://Player/gun.tscn" id="4_gwnis"]
+[ext_resource type="PackedScene" uid="uid://c553rv5hvrg6j" path="res://Weapons/gun.tscn" id="4_gwnis"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_hvfyp"]
 

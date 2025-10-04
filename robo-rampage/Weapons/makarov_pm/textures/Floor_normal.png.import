@@ -2,8 +2,8 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bt772xl4g8xax"
-path.s3tc="res://.godot/imported/makarov_material_normal.png-feb7557ea2d5edf16a2a19b9d1dca7e9.s3tc.ctex"
+uid="uid://ca8pawrg14y8s"
+path.s3tc="res://.godot/imported/Floor_normal.png-d77b85ae78292df4adc4e1b80afe58ac.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +11,8 @@ metadata={
 
 [deps]
 
-source_file="res://Player/makarov_pm/textures/makarov_material_normal.png"
-dest_files=["res://.godot/imported/makarov_material_normal.png-feb7557ea2d5edf16a2a19b9d1dca7e9.s3tc.ctex"]
+source_file="res://Weapons/makarov_pm/textures/Floor_normal.png"
+dest_files=["res://.godot/imported/Floor_normal.png-d77b85ae78292df4adc4e1b80afe58ac.s3tc.ctex"]
 
 [params]
 
@@ -27,7 +27,7 @@ compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=1
-roughness/src_normal="res://Player/makarov_pm/textures/makarov_material_normal.png"
+roughness/src_normal="res://Player/makarov_pm/textures/Floor_normal.png"
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2
