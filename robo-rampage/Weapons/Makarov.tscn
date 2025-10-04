@@ -39,10 +39,12 @@ transform = Transform3D(-2.915, 0, -4.4015275e-07, 0, 2.915, 0, 4.4015275e-07, 0
 [node name="MuzzleFlash" type="GPUParticles3D" parent="." index="3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.24573857, -0.09975761, -1.2130525)
 material_override = SubResource("StandardMaterial3D_m340x")
+cast_shadow = 0
 emitting = false
 lifetime = 0.06999999999999999
 one_shot = true
 explosiveness = 1.0
 fixed_fps = 60
+local_coords = true
 process_material = SubResource("ParticleProcessMaterial_m340x")
 draw_pass_1 = SubResource("BoxMesh_3cy8r")
