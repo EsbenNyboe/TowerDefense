@@ -10,9 +10,11 @@ var player
 func _ready() -> void:
 	player = get_tree().get_first_node_in_group("player")
 
-func _physics_process(delta: float) -> void:
+func _process(_delta: float) -> void:
 	navigation_agent_3d.target_position = player.global_position
-	var next_position = navigation_agent_3d.get_next_path_position()
+
+func _physics_process(delta: float) -> void:
+	var _next_position = navigation_agent_3d.get_next_path_position()
 	
 	# Add the gravity.
 	if not is_on_floor():
