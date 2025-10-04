@@ -1,0 +1,23 @@
+[gd_scene load_steps=2 format=3 uid="uid://c553rv5hvrg6j"]
+
+[ext_resource type="PackedScene" uid="uid://dhjra6bymgnx1" path="res://Player/makarov_pm/scene.gltf" id="1_1bc6a"]
+
+[node name="Gun" instance=ExtResource("1_1bc6a")]
+
+[node name="Sketchfab_model" parent="." index="0"]
+transform = Transform3D(1, 0, 0, 0, 0.99999994, 0, 0, 0, 0.99999994, 0, 0, 0)
+
+[node name="Makarov_base_12" parent="Sketchfab_model/root/GLTF_SceneRootNode" index="0"]
+transform = Transform3D(0.03404528, 0, 0, 0, 0.03404528, 0, 0, 0, 0.03404528, 0, 0.06105835, -0.012412821)
+
+[node name="Floor_13" parent="Sketchfab_model/root/GLTF_SceneRootNode" index="1"]
+visible = false
+
+[node name="Object_20" parent="Sketchfab_model/root/GLTF_SceneRootNode/Floor_13" index="0"]
+visible = false
+
+[node name="Stand_14" parent="Sketchfab_model/root/GLTF_SceneRootNode" index="2"]
+visible = false
+
+[node name="Object_22" parent="Sketchfab_model/root/GLTF_SceneRootNode/Stand_14" index="0"]
+visible = false
