@@ -1,10 +1,11 @@
-[gd_scene load_steps=11 format=3 uid="uid://chl7l5d4wda2e"]
+[gd_scene load_steps=12 format=3 uid="uid://chl7l5d4wda2e"]
 
 [ext_resource type="Script" uid="uid://dfovmxd54sl6j" path="res://Player/player.gd" id="1_l8h54"]
 [ext_resource type="Script" uid="uid://b7tm8cd4o5pfk" path="res://Player/smooth_camera.gd" id="2_4ntmi"]
 [ext_resource type="Script" uid="uid://de0hwn6syogc0" path="res://Player/crosshair.gd" id="3_btcbx"]
 [ext_resource type="PackedScene" uid="uid://b2ued6l38v8xi" path="res://Weapons/Makarov.tscn" id="3_gwnis"]
 [ext_resource type="Texture2D" uid="uid://e7ktvvm5qiab" path="res://Player/output-onlinepngtools.png" id="5_k53q1"]
+[ext_resource type="PackedScene" uid="uid://t334dnbqtcx7" path="res://Player/game_over_menu.tscn" id="6_fhl08"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_hvfyp"]
 
@@ -137,3 +138,6 @@ texture = ExtResource("5_k53q1")
 libraries = {
 &"": SubResource("AnimationLibrary_fhl08")
 }
+
+[node name="GameOverMenu" parent="." instance=ExtResource("6_fhl08")]
+visible = false
