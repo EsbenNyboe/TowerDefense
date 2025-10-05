@@ -36,8 +36,39 @@ one_shot = true
 [node name="Gun" parent="." index="1" instance=ExtResource("2_m340x")]
 transform = Transform3D(-2.915, 0, -4.4015275e-07, 0, 2.915, 0, 4.4015275e-07, 0, -2.915, 0.245, -0.28100002, -0.422)
 
+[node name="Object_4" parent="Gun/Sketchfab_model/root/GLTF_SceneRootNode/Makarov_base_12" index="0"]
+layers = 2
+
+[node name="Object_6" parent="Gun/Sketchfab_model/root/GLTF_SceneRootNode/Makarov_base_12/Makarov_bullet_5" index="0"]
+layers = 2
+
+[node name="Object_8" parent="Gun/Sketchfab_model/root/GLTF_SceneRootNode/Makarov_base_12/Makarov_hammer_6" index="0"]
+layers = 2
+
+[node name="Object_10" parent="Gun/Sketchfab_model/root/GLTF_SceneRootNode/Makarov_base_12/Makarov_mag_7" index="0"]
+layers = 2
+
+[node name="Object_12" parent="Gun/Sketchfab_model/root/GLTF_SceneRootNode/Makarov_base_12/Makarov_sight_8" index="0"]
+layers = 2
+
+[node name="Object_14" parent="Gun/Sketchfab_model/root/GLTF_SceneRootNode/Makarov_base_12/Makarov_slide_9" index="0"]
+layers = 2
+
+[node name="Object_16" parent="Gun/Sketchfab_model/root/GLTF_SceneRootNode/Makarov_base_12/Makarov_suppressor_10" index="0"]
+layers = 2
+
+[node name="Object_18" parent="Gun/Sketchfab_model/root/GLTF_SceneRootNode/Makarov_base_12/Makarov_trigger_11" index="0"]
+layers = 2
+
+[node name="Object_20" parent="Gun/Sketchfab_model/root/GLTF_SceneRootNode/Floor_13" index="0"]
+layers = 2
+
+[node name="Object_22" parent="Gun/Sketchfab_model/root/GLTF_SceneRootNode/Stand_14" index="0"]
+layers = 2
+
 [node name="MuzzleFlash" type="GPUParticles3D" parent="." index="3"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.24573857, -0.09975761, -1.2130525)
+layers = 2
 material_override = SubResource("StandardMaterial3D_m340x")
 cast_shadow = 0
 emitting = false
@@ -48,3 +79,5 @@ fixed_fps = 60
 local_coords = true
 process_material = SubResource("ParticleProcessMaterial_m340x")
 draw_pass_1 = SubResource("BoxMesh_3cy8r")
+
+[editable path="Gun"]
