@@ -1,7 +1,7 @@
 [gd_scene load_steps=8 format=3 uid="uid://b2ued6l38v8xi"]
 
 [ext_resource type="PackedScene" uid="uid://co4gksr7onne2" path="res://Weapons/hitscan_weapon.tscn" id="1_lgfmg"]
-[ext_resource type="PackedScene" uid="uid://c553rv5hvrg6j" path="res://Weapons/gun.tscn" id="2_m340x"]
+[ext_resource type="PackedScene" uid="uid://c553rv5hvrg6j" path="res://Weapons/makarov_pm/makarov_model.tscn" id="2_m340x"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_m340x"]
 emission_enabled = true
@@ -29,6 +29,7 @@ size = Vector3(0.1, 0.1, 0.1)
 [node name="HitscanWeapon" node_paths=PackedStringArray("weapon_mesh", "muzzle_flash") instance=ExtResource("1_lgfmg")]
 weapon_mesh = NodePath("Gun")
 muzzle_flash = NodePath("MuzzleFlash")
+automatic = true
 
 [node name="CooldownTimer" parent="." index="0"]
 one_shot = true
