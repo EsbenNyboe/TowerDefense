@@ -26,7 +26,7 @@ scale_curve = SubResource("CurveTexture_u3ul2")
 [sub_resource type="BoxMesh" id="BoxMesh_3cy8r"]
 size = Vector3(0.1, 0.1, 0.1)
 
-[node name="HitscanWeapon" node_paths=PackedStringArray("weapon_mesh", "muzzle_flash") instance=ExtResource("1_lgfmg")]
+[node name="Makarov" node_paths=PackedStringArray("weapon_mesh", "muzzle_flash") instance=ExtResource("1_lgfmg")]
 weapon_mesh = NodePath("Gun")
 muzzle_flash = NodePath("MuzzleFlash")
 automatic = true
