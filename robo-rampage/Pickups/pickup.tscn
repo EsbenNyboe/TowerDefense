@@ -1,6 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://cctov4vxh120q"]
+[gd_scene load_steps=10 format=3 uid="uid://cctov4vxh120q"]
 
 [ext_resource type="Script" uid="uid://64ksfyd2vukv" path="res://Pickups/pickup.gd" id="1_0pywb"]
+[ext_resource type="Shader" uid="uid://bappfxsha1dn6" path="res://Pickups/FresnelAura.tres" id="2_vx7qd"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_vx7qd"]
 size = Vector3(0.5, 0.5, 0.5)
@@ -45,11 +46,17 @@ _data = {
 &"RESET": SubResource("Animation_vx7qd")
 }
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_x5h4h"]
+render_priority = 0
+shader = ExtResource("2_vx7qd")
+
+[sub_resource type="SphereMesh" id="SphereMesh_0pywb"]
+
 [node name="Pickup" type="Area3D"]
 script = ExtResource("1_0pywb")
 
 [node name="AmmoMesh" type="MeshInstance3D" parent="."]
-transform = Transform3D(0.7071067, -0.7071065, 0, 0.49999988, 0.49999973, -0.7071066, 0.49999994, 0.4999998, 0.7071065, 0, 0, 0)
+transform = Transform3D(0.70710665, -0.7071064, 0, 0.49999985, 0.4999997, -0.7071066, 0.4999999, 0.49999976, 0.7071065, 0, 0, 0)
 mesh = SubResource("BoxMesh_vx7qd")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
@@ -60,5 +67,9 @@ libraries = {
 &"": SubResource("AnimationLibrary_x5h4h")
 }
 autoplay = "Idle"
+
+[node name="FresnelAura" type="MeshInstance3D" parent="."]
+material_override = SubResource("ShaderMaterial_x5h4h")
+mesh = SubResource("SphereMesh_0pywb")
 
 [connection signal="body_entered" from="." to="." method="_on_body_entered"]
