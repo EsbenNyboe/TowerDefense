@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://12tigt40dmgf" path="res://Enemy/Drone.glb" id="2_px1sc"]
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2pb1h"]
+radius = 0.3
 
 [sub_resource type="Animation" id="Animation_2pb1h"]
 resource_name = "Attack"
